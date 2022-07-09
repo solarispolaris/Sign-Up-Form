@@ -9,13 +9,23 @@
     font-family: 'Courier New', Courier, monospace;
  }
 
- a:link{
+ p.log-back-in a:link{
     text-decoration: none;
-    color:#5B7F36;
+    font-weight: 600;
+    color:#FED001;
  }
 
- a:visited{
-    color: #5B7F36;
+ p.log-back-in a:visited{
+    color: #FED001;
+ }
+
+ p.img-credit a:link{
+    text-decoration: none;
+    color:white;
+ }
+
+ p.img-credit a:visited{
+    color: white;
  }
 
  body{
@@ -27,19 +37,20 @@
 
  .side-header{
     width: 30%;
-    height: 100vh;
-    background-image: url(images/greenleaf.avif);
+    min-height: 100vh;
+    background-image: url(images/stars.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     border-style: solid;
     border-width: 1px;
     position: relative;
+    
     
  }
 
  .logo-container{
     width: 100%;
-    height: 75px;
+    height: 180px;
     background-color: rgba(0, 0, 0, 0.445);
     display: flex;
     align-items: center;
@@ -49,17 +60,15 @@
  }
 
  .logo-container img{
-    width: 50px;
-    height: 100px;
+    width: 100px;
+    height: 200px;
     object-fit: contain;
     
  }
 
  .logo-container p{
-    
-    font-family: 'Courier New', Courier, monospace;
     color: white;
-    font-size: 2rem;
+    font-size: 64px;
 
  }
 
@@ -67,7 +76,7 @@
     
     
     color: white;
-    font-size: .75rem;
+    font-size: 16px;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -86,10 +95,10 @@
 
 
  .signup-text-container{
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 900;
     padding: 100px;
-    background-color: rgba(216, 206, 206, 0.171);
+    background-color: rgba(249, 249, 199, 0.397);
     height: 400px;
  }
 
@@ -112,7 +121,7 @@
  }
 
  legend{
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 500;
  }
 
@@ -123,13 +132,13 @@
  }
 
  .field-area label{
-    font-size: .75rem;
+    font-size: 12px;
     font-weight: 800;
  }
 
  .field-area input{
    
-    border: 1px solid black;
+    border: 1px solid #312427;
     
     padding: 10px 10px;
     
@@ -150,7 +159,7 @@
 
 
  button{
-    background-color: #5B7F36;
+    background-color: #2B1F2F;
     color: white;
     width: 200px;
     height: 50px;
@@ -161,6 +170,8 @@
  .log-back-in{
     margin-left: 100px;
  }
+
+
 
 
 
