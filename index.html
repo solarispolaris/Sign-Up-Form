@@ -22,7 +22,7 @@
             <p class="signup-title">You Know You Want To!</p>
             <p class="signup-text-contents">Sign up today for exclusive events, rewards and prizes!</p>
         </div>
-        <form class="signup" action="#" method="get">
+        <form class="signup" action="#" onsubmit="return validateForm()" method="get">
             <div class="sign-field">
                 <fieldset>
                     <legend>Lets Start</legend>
@@ -61,6 +61,42 @@
             <a href="#">Log In</a>
         </p>
     </div>
+
+    <script>
+        const password = document.querySelector("#password");
+        const passwordConfirm = document.querySelector("#confirm-psw");
+        //event listeners for checking if both password boxes equal each other
+        passwordConfirm.addEventListener("keyup", e => {
+            const password = document.querySelector("#password");
+            if(e.target.value !== password.value)
+                e.target.style.backgroundColor = "rgba(255, 1, 1, 0.349)";
+            else{
+                e.target.style.backgroundColor = "rgba(57, 230, 4, 0.349)";
+            }
+        });
+        password.addEventListener("keyup", e => {
+            const passwordConfirm = document.querySelector("#confirm-psw");
+            if(passwordConfirm.value !== ""){
+                if(e.target.value !== passwordConfirm.value)
+                    passwordConfirm.style.backgroundColor = "rgba(255, 1, 1, 0.349)";
+                else{
+                    passwordConfirm.style.backgroundColor = "rgba(57, 230, 4, 0.349)";
+                }
+            }
+            
+        });
+
+
+        function validateForm() {
+            const password = document.querySelector("#password");
+            const passwordConfirm = document.querySelector("#confirm-psw");
+            if (passwordConfirm.value !== password.value) {
+                return false;
+            }
+            return true;
+        } 
+
+    </script>
     
 </body>
 </html>
