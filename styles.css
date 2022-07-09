@@ -2,6 +2,11 @@
     border: 0;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+ }
+
+ :root{
+    font-family: 'Courier New', Courier, monospace;
  }
 
  a:link{
@@ -60,7 +65,7 @@
 
  .side-header > p{
     
-    font-family: 'Courier New', Courier, monospace;
+    
     color: white;
     font-size: .75rem;
     position: absolute;
@@ -72,23 +77,27 @@
 
  .sign-container{
     width: 70%;
-    height: 100vh;
+    height: 600px;
     display: flex;
     flex-direction: column;
     
  }
 
- .signup{
-    
-    width: 100%;
-    
-    
+
+
+ .signup-text-container{
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 100px;
+    background-color: rgba(216, 206, 206, 0.171);
+    height: 400px;
  }
 
  .sign-field{
-    width: 100%;
-    
-    box-shadow: 0 3px 10px rgba(0, 0, 0, .5);
+    padding: 20px 0 20px 90px;
+    margin-bottom: 20px;  
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+
  }
 
  fieldset{
@@ -104,7 +113,7 @@
 
  legend{
     font-size: 2rem;
-    font-weight: 900;
+    font-weight: 500;
  }
 
  .field-area{
@@ -114,17 +123,21 @@
  }
 
  .field-area label{
-    font-size: .65rem;
+    font-size: .75rem;
     font-weight: 800;
  }
 
  .field-area input{
    
     border: 1px solid black;
-    box-sizing: border-box;
+    
     padding: 10px 10px;
     
     
+ }
+
+ .signup{
+    margin-bottom: 20px;
  }
 
 
@@ -139,9 +152,14 @@
  button{
     background-color: #5B7F36;
     color: white;
-    width: 100px;
-    height: 40px;
-    border-radius: 10%;
+    width: 200px;
+    height: 50px;
+    border-radius: 5%;
+    margin-left: 100px;
+ }
+
+ .log-back-in{
+    margin-left: 100px;
  }
 
 
