@@ -4,6 +4,15 @@
     margin: 0;
  }
 
+ a:link{
+    text-decoration: none;
+    color:#5B7F36;
+ }
+
+ a:visited{
+    color: #5B7F36;
+ }
+
  body{
     display: flex;
  }
@@ -66,5 +75,59 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    padding-left: 20px;
  }
+
+ .signup{
+    
+    width: 450px;
+ }
+
+ fieldset{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 50px;
+ }
+
+ .field-area{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+ }
+
+ .field-area label{
+    font-size: .75rem;
+    font-weight: 800;
+ }
+
+ .field-area input{
+    border: 1px solid black;
+    
+ }
+
+ .field-area input:invalid{
+    border-color: red;
+ }
+
+ .field-area input:valid{
+    border-color: green;
+ }
+ 
+
+ .field-area input:focus{
+    border-color: blue;
+ }
+
+
+ button{
+    background-color: #5B7F36;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 10%;
+ }
+
+
 
